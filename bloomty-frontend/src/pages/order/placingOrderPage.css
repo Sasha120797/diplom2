@@ -1,0 +1,314 @@
+.placing-order-page-container {
+    width: 100%;
+    padding-bottom: 120px;
+}
+
+.placing-order-page-contacts {
+    background-color: #F2F0EE;
+    min-height: 340px;
+}
+
+.placing-order-page-contacts-inner {
+    height: 100%;
+    width: 100%;
+    min-height: 340px;
+}
+
+.placing-order-page-contacts-navigation {
+    line-height: 150%;
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    padding-top: 10px;
+    color: #939393;
+}
+
+.placing-order-page-contacts-navigation span {
+    color: #212121;
+}
+
+.placing-order-page-contacts-title {
+    color: #212121;
+    font-size: 34px;
+    margin-top: 40px;
+    text-transform: uppercase;
+    font-family: "Cormorant", sans-serif;
+    font-weight: bold;
+}
+
+.placing-order-page-contacts-form {
+    margin-top: 30px;
+}
+
+.placing-order-page-contacts-form-title {
+    font-size: 18px;
+    font-family: "Montserrat", serif;
+    font-weight: bold;
+    line-height: 150%;
+}
+
+.placing-order-page-contacts-form-inputs {
+    margin-top: 25px;
+}
+
+.placing-order-page-contacts-form-input-str {
+    display: flex;
+}
+
+.placing-order-page-contacts-form-input {
+    max-width: 350px;
+    width: 100%;
+    margin-right: 55px;
+}
+
+.placing-order-page-contacts-form-input-str:last-child {
+    margin-top: 40px;
+}
+
+.placing-order-page-address {
+    margin-top: 10px;
+}
+
+.placing-order-page-address-title {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 150%;
+    color: #212121;
+    font-family: "Montserrat", sans-serif;
+}
+
+.placing-order-page-address-form {
+    margin-top: 25px;
+}
+
+.placing-order-page-address-form-input-str {
+    display: flex;
+}
+
+.placing-order-page-address-form-input {
+    max-width: 350px;
+    width: 100%;
+    margin-right: 55px;
+}
+
+.placing-order-page-address-form-input-str:last-child {
+    margin-top: 40px;
+}
+
+.placing-order-page-comments {
+    margin-top: 55px;
+}
+
+.placing-order-page-comments-title {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 150%;
+    color: #212121;
+    font-family: "Montserrat", sans-serif;
+}
+
+.placing-order-page-comments-form {
+    margin-top: 25px;
+}
+
+.placing-order-page-comments-form {
+    max-width: 760px;
+    border: 2px solid #bdc3c7;
+    padding-left: 30px;
+    padding-top: 15px;
+    padding-right: 10px;
+    color: #212121;
+    font-family: "Montserrat", sans-serif;
+}
+
+.placing-order-page-delivery {
+    margin-top: 50px;
+}
+
+.placing-order-page-delivery-title {
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+}
+
+.placing-order-page-delivery-form-input {
+    display: flex;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.placing-order-page-delivery-form-input:first-child {
+    margin-top: 35px;
+    margin-bottom: 25px;
+}
+
+.placing-order-page-delivery-form-input input {
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+    display: none;
+}
+
+.placing-order-page-delivery-form-input label {
+    display: flex;
+    align-items: center;
+}
+
+.placing-order-page-delivery-form-input label:before {
+    width: 26px;
+    height: 26px;
+    margin-right: 20px;
+    content: "";
+    border: 1px solid black;
+    display: inline-flex;
+    cursor: pointer;
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding-top: 7px;
+}
+
+.placing-order-page-delivery-form-input input:checked+label:before {
+    content: url("../catalog/images/square.svg");
+}
+
+.placing-order-page-buttons {
+    display: flex;
+    margin-top: 65px;
+}
+
+.placing-order-page-button {
+    padding: 20px;
+    max-width: 250px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid;
+}
+
+.placing-order-page-button:first-child {
+    margin-right: 50px;
+}
+
+@media (max-width: 1000px) {
+    .placing-order-page-contacts-form-input-str {
+        flex-direction: column;
+    }
+
+    .placing-order-page-address-form-input-str {
+        flex-direction: column;
+    }
+
+    .placing-order-page-contacts-form-input {
+        margin-top: 25px;
+        max-width: none;
+    }
+
+    .placing-order-page-address-form-input {
+        margin-top: 25px;
+        max-width: none;
+    }
+
+    .placing-order-page-contacts-inner {
+        padding-bottom: 35px;
+        max-width: 550px;
+    }
+
+    .placing-order-page-contacts-form-input-str:last-child {
+        margin-top: 0;
+    }
+
+    .placing-order-page-address-form-input-str:last-child {
+        margin-top: 0;
+    }
+
+    .placing-order-page-contacts-form-inputs {
+        margin-top: 0;
+    }
+
+    .placing-order-page-address-form {
+        margin-top: 0;
+    }
+
+    .placing-order-page-contacts-title {
+        margin-top: 20px;
+        font-size: 28px;
+    }
+
+    .placing-order-page-contacts-form {
+        margin-top: 20px;
+    }
+
+    .placing-order-page-contacts-navigation {
+        font-size: 14px;
+    }
+
+    .placing-order-page-comments-form {
+        max-width: none;
+    }
+
+    .placing-order-page-address {
+        max-width: 550px;
+    }
+
+    .placing-order-page-comments {
+        max-width: 550px;
+    }
+
+    .placing-order-page-delivery {
+        max-width: 560px;
+    }
+
+    .placing-order-page-buttons {
+        max-width: 560px;
+    }
+}
+
+@media (max-width: 560px) {
+    .placing-order-page-contacts-form-title {
+        font-size: 16px;
+        line-height: 130%;
+    }
+
+    .placing-order-page-address-title {
+        font-size: 16px;
+    }
+
+    .placing-order-page-comments-title {
+        font-size: 16px;
+    }
+
+    .placing-order-page-buttons {
+        flex-direction: column;
+        margin-top: 45px;
+    }
+
+    .placing-order-page-buttons div:first-child {
+        margin-bottom: 25px;
+    }
+
+    .placing-order-page-delivery-form-input {
+        font-size: 16px;
+    }
+
+    .placing-order-page-button {
+        max-width: none;
+    }
+
+    .placing-order-page-delivery-title {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 340px) {
+    .placing-order-page-contacts-title {
+        font-size: 24px;
+    }
+
+    .placing-order-page-contacts-navigation {
+        font-size: 12px;
+    }
+}

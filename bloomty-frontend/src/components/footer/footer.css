@@ -1,0 +1,93 @@
+.footer-container {
+    width: 100%;
+    min-height: 540px;
+    background-color: #F2F0EE;
+}
+
+.footer-inner-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100%;
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-block {
+    width: 210px;
+}
+
+.footer-title {
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    color: #212121;
+}
+
+.footer-link {
+    font-family: "Montserrat", sans-serif;
+    color: #212121;
+    margin-bottom: 25px;
+    cursor: pointer;
+    transition: 0.2s linear;
+    line-height: 150%;
+    font-size: 18px;
+}
+
+.footer-link a:visited {
+    text-decoration: none;
+    color: #212121;
+}
+
+.footer-link a {
+    text-decoration: none;
+    color: #212121;
+}
+
+.footer-link:hover {
+    color: black;
+}
+
+.footer-sub-title {
+    margin-top: 50px;
+}
+
+
+@media (max-width: 1200px) {
+    .footer-block {
+        width: 50%;
+        margin-bottom: 25px;
+    }
+
+    .footer-container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .footer-link {
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-title {
+        font-size: 16px;
+    }
+
+    .footer-link {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 560px) {
+    .footer-link {
+        font-size: 14px;
+    }
+
+    .footer-block {
+        width: 100%;
+    }
+}

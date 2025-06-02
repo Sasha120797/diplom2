@@ -1,0 +1,140 @@
+.makeOrder-page-container {
+    padding-bottom: 100px;
+}
+
+.makeOrder-page-content {
+    margin-top: -110px;
+}
+
+.makeOrder-page-header {
+    background-color: #F2F0EE;
+    padding-bottom: 10px;
+    min-height: 250px;
+}
+
+.makeOrder-page-header-navigation {
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    line-height: 150%;
+    color: #939393;
+    padding-top: 10px;
+}
+
+.makeOrder-page-header-navigation>span {
+    color: #212121;
+}
+
+.makeOrder-page-header-title {
+    margin-top: 48px;
+    font-family: "Cormorant", sans-serif;
+    font-size: 34px;
+    color: #212121;
+    font-weight: bold;
+}
+
+.makeOrder-page-content-title {
+    font-family: "Montserrat", sans-serif;
+    color: #212121;
+    font-size: 18px;
+    line-height: 150%;
+    margin-top: 50px;
+    font-weight: 500;
+}
+
+.makeOrder-page-content-sub-title {
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    color: #212121;
+    margin-top: 20px;
+    line-height: 150%;
+}
+
+.makeOrder-page-content-description {
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    color: #212121;
+    margin-top: 30px;
+    line-height: 150%;
+}
+
+.makeOrder-page-content-block {
+    max-width: 500px;
+}
+
+.makeOrder-page-button {
+    max-width: 300px;
+    padding: 20px;
+    margin-top: 45px;
+    display: flex;
+    justify-content: center;
+    line-height: 150%;
+    font-weight: 500;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+@media (max-width: 1300px) {
+    .makeOrder-page-header-inner {
+        max-width: 550px;
+    }
+
+    .makeOrder-page-content {
+        max-width: 550px;
+    }
+
+    .makeOrder-page-container {
+        padding-bottom: 80px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .makeOrder-page-header-inner {
+        max-width: 550px;
+    }
+
+    .makeOrder-page-header-navigation {
+        font-size: 14px;
+    }
+
+    .makeOrder-page-header-title {
+        font-size: 26px;
+    }
+
+    .makeOrder-page-content {
+        max-width: 550px;
+    }
+
+    .makeOrder-page-content-block {
+        font-size: 16px;
+    }
+
+    .makeOrder-page-container {
+        padding-bottom: 80px;
+    }
+}
+
+@media (max-width: 600px) {
+    .makeOrder-page-button {
+        margin: 50px auto;
+    }
+
+    .makeOrder-page-header-navigation {
+        font-size: 12px;
+    }
+
+    .makeOrder-page-header-title {
+        font-size: 22px;
+    }
+
+    .makeOrder-page-content-block {
+        font-size: 14px;
+    }
+
+    .makeOrder-page-content {
+        margin-top: -80px;
+    }
+
+    .makeOrder-page-header {
+        min-height: 180px;
+    }
+}

@@ -1,0 +1,129 @@
+.register-page-container {
+    padding-bottom: 150px;
+}
+
+.register-page-header {
+    background-color: #F2F0EE;
+    min-height: 250px;
+}
+
+.register-page-header-inner {
+    min-height: 250px;
+}
+
+.register-page-header-navigation {
+    color: #939393;
+    font-family: "Montserrat", sans-serif;
+    line-height: 150%;
+    padding-top: 10px;
+}
+
+.register-page-header-navigation span {
+    color: #212121;
+}
+
+.register-page-header-title {
+    text-transform: uppercase;
+    font-size: 36px;
+    font-family: "Cormorant", sans-serif;
+    font-weight: bold;
+    margin-top: 45px;
+    color: #212121;
+}
+
+.register-page-header-description {
+    max-width: 720px;
+    line-height: 150%;
+    color: #212121;
+    font-family: "Montserrat", sans-serif;
+    margin-top: 30px;
+    font-size: 18px;
+}
+
+.register-page-header-form>div {
+    max-width: 400px;
+}
+
+.register-page-header-form-title {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 150%;
+    color: #212121;
+    font-family: "Montserrat", sans-serif;
+}
+
+.register-page-header-form-input {
+    margin-bottom: 30px;
+}
+
+.register-page-header-form-description {
+    font-size: 14px;
+    color: #212121;
+    margin-top: 30px;
+    line-height: 150%;
+    font-family: "Montserrat", sans-serif;
+}
+
+.register-page-header-form-description > p{
+    display: inline-block;
+    color: #1565c0;
+    cursor: pointer;
+}
+
+.register-page-header-form-button {
+    margin-top: 30px;
+    padding: 20px 15px;
+    text-align: center;
+}
+
+@media (max-width: 1000px) {
+    .register-page-header-inner {
+        max-width: 550px;
+    }
+
+    .register-page-header-navigation {
+        font-size: 14px;
+    }
+
+    .register-page-header-title {
+        font-size: 28px;
+    }
+
+    .register-page-header-description {
+        font-size: 16px;
+    }
+
+    .register-page-header-form {
+        max-width: 550px;
+    }
+
+    .register-page-container {
+        padding-bottom: 80px;
+    }
+
+    .register-page-header-form>div {
+        max-width: none;
+    }
+}
+
+@media (max-width: 560px) {
+    .register-page-header-inner {
+        padding-bottom: 20px;
+    }
+
+    .register-page-header-form-title {
+        font-size: 16px;
+    }
+
+    .register-page-header-form-description {
+        font-size: 12px;
+    }
+
+    .register-page-header-form-button {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 340px) {}

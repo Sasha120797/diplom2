@@ -1,0 +1,66 @@
+.login-page-pop-up-container {
+    max-width: 350px;
+    margin: 0 auto;
+}
+
+.login-page-pop-up-form-field {
+    margin-top: 35px;
+}
+
+.login-page-pop-up-form-reset-password {
+    font-size: 16px;
+    color: #8D8D8D;
+    border-bottom: 1px solid #8D8D8D;
+    margin-top: 35px;
+    transition: 0.2s linear;
+    padding-bottom: 5px;
+    max-width: fit-content;
+    cursor: pointer;
+}
+
+.login-page-pop-up-form-reset-password:hover {
+    color: #212121;
+    border-bottom: 1px solid #212121;
+}
+
+.login-page-pop-up-form-button {
+    padding: 15px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.login-page-pop-up-form-register {
+    max-width: fit-content;
+    border-bottom: 1px solid #212121;
+    color: #212121;
+    font-size: 20px;
+    margin: 0 auto;
+    margin-top: 15px;
+    font-weight: 600;
+    padding-bottom: 6px;
+    cursor: pointer;
+    transition: 0.3s linear;
+}
+
+.login-page-pop-up-form-register:hover {
+    color: #8D8D8D;
+    border-color: #8D8D8D;
+}
+
+@media (max-width: 560px) {
+    .login-page-pop-up-container {
+        max-width: none;
+    }
+
+    .login-page-pop-up-form-register {
+        font-size: 16px;
+    }
+
+    .login-page-pop-up-form-button {
+        font-size: 16px;
+    }
+
+    .login-page-pop-up-form-reset-password {
+        font-size: 14px;
+    }
+}

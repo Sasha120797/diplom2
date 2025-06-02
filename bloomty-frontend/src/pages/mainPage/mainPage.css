@@ -1,0 +1,656 @@
+.main-page-block1-bgc {
+    height: 860px;
+}
+
+.main-page-block2-bgc {
+    background-color: #F2F0EE;
+    height: 435px;
+}
+
+.main-page-content {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+}
+
+.main-page-introduction-pic1-m,
+.main-page-introduction-pic1-s {
+    display: none;
+}
+
+.main-page-container {
+    position: relative;
+}
+
+.main-page-block1-introduction {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-page-introduction-info {
+    padding: 0 20px;
+}
+
+.main-page-introduction-title {
+    font-size: 84px;
+    font-family: "Cormorant", sans-serif;
+    font-weight: 500;
+    margin-bottom: 26px;
+}
+
+.main-page-introduction-sub-title {
+    max-width: 650px;
+    font-size: 26px;
+    font-family: "Montserrat", sans-serif;
+    color: #212121;
+    line-height: 150%;
+    margin-bottom: 26px;
+}
+
+.main-page-introduction-title span {
+    font-style: italic;
+}
+
+.main-page-introduction-button {
+    padding: 20px 35px;
+    font-size: 22px;
+    font-family: "Montserrat", sans-serif;
+    background-color: #212121;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: fit-content;
+}
+
+.main-page-block2-promotions {
+    margin-top: 130px;
+}
+
+.main-page-block2-title {
+    font-size: 44px;
+    font-weight: bold;
+    font-family: "Cormorant", sans-serif;
+}
+
+.main-page-block2-description {
+    max-width: 560px;
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+    margin-top: 45px;
+    line-height: 150%;
+}
+
+.main-page-block3-bgc {
+    height: 1300px;
+}
+
+.main-page-block3-current-promotion {
+    margin-top: 80px;
+    width: 100%;
+    height: 640px;
+    background-color: rgba(82, 54, 0, 0.15);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-page-block3-current-promotion-content {
+    max-width: 630px;
+    width: 100%;
+    height: 100%;
+    max-height: 340px;
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.main-page-block3-current-promotion-content-title {
+    max-width: 480px;
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    line-height: 120%;
+}
+
+.main-page-block3-current-promotion-content-button {
+    max-width: 280px;
+    width: 100%;
+    background-color: #212121;
+    margin-top: 35px;
+    color: #ffffff;
+    font-size: 20px;
+    font-family: "Montserrat", sans-serif;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-page-block3-current-promotion-content-additional-conditions {
+    text-align: right;
+    width: 95%;
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    margin-top: 10px;
+    position: absolute;
+    bottom: 15px;
+}
+
+.main-page-block4-bgc {
+    background-color: #F2F0EE;
+    height: 500px;
+}
+
+.main-page-block5-bgc {
+    height: 1200px;
+}
+
+.main-page-block6-bgc {
+    background: #F2F0EE;
+    height: 530px;
+}
+
+.main-page-block7-bgc {
+    height: 450px;
+}
+
+.main-page-block4-about-us {
+    margin-top: 225px;
+    display: flex;
+    align-items: center;
+}
+
+.main-page-block4-about-us-info-title {
+    font-size: 45px;
+    font-weight: bold;
+    font-family: "Cormorant", sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 45px;
+}
+
+.main-page-block4-about-us-info-paragraph {
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+    line-height: 150%;
+    margin-bottom: 35px;
+}
+
+.main-page-block4-about-us-info {
+    margin-left: 100px;
+}
+
+.main-page-block4-about-us-info-button {
+    padding: 15px 35px;
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    font-size: 20px;
+    border: 2px solid #212121;
+    max-width: 280px;
+    box-shadow: 4px 6px 8px 0px rgba(0, 0, 0, 0.2);
+}
+
+.main-page-block5-popular-category {
+    margin-top: 250px;
+}
+
+.main-page-block5-popular-category-title {
+    text-transform: uppercase;
+    font-size: 44px;
+    font-family: "Cormorant", sans-serif;
+    font-weight: bold;
+}
+
+.main-page-block5-popular-category-cards {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.main-page-block5-popular-category-card-image img {
+    max-width: 477px;
+    max-height: 523px;
+}
+
+.main-page-block5-popular-category-card-image {
+    position: relative;
+}
+
+.main-page-block5-popular-category-card-image-category {
+    position: absolute;
+    bottom: 2px;
+    right: 0;
+    font-size: 24px;
+    background: white;
+    padding: 10px 20px;
+    font-family: "Cormorant", sans-serif;
+    font-weight: bold;
+    min-width: 120px;
+    text-align: center;
+}
+
+.main-page-block5-popular-category-card-description {
+    font-size: 18px;
+    line-height: 150%;
+    max-width: 470px;
+    margin-top: 45px;
+    white-space: pre-line;
+    font-family: "Montserrat", sans-serif;
+}
+
+.main-page-block5-popular-category-card-button {
+    margin-top: 20px;
+    color: white;
+    background-color: #212121;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 40px;
+    max-width: 350px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.main-page-block6-newsletter {
+    margin-top: 250px;
+}
+
+.main-page-block6-newsletter-title {
+    text-align: center;
+    font-family: "Cormorant", sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.main-page-block6-newsletter-form {
+    margin-top: 65px;
+    background-color: #fff;
+    display: flex;
+}
+
+/*.main-page-block6-newsletter-form > div{*/
+/*    width: 50%;*/
+/*}*/
+
+.main-page-block6-newsletter-form-inputs {
+    padding: 60px 100px;
+}
+
+.main-page-block6-newsletter-form-inputs-title {
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+    line-height: 150%;
+}
+
+.main-page-block6-newsletter-form-inputs-content {
+    margin-top: 75px;
+}
+
+.main-page-block6-newsletter-form-inputs-content-input:first-child {
+    margin-bottom: 40px;
+}
+
+.main-page-block6-newsletter-form-inputs-sub-title {
+    font-size: 14px;
+    color: #212121;
+    font-family: "Montserrat", sans-serif;
+    margin-top: 55px;
+    line-height: 150%;
+}
+
+.main-page-block6-newsletter-form-inputs-sub-title > p{
+    display: inline-block;
+    color: #1565c0;
+    cursor: pointer;
+}
+
+.main-page-block6-newsletter-form-inputs-btn {
+    font-size: 22px;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #212121;
+    margin-top: 40px;
+    max-width: 300px;
+}
+
+.main-page-block6-newsletter-form-image>img {
+    width: 590px;
+    height: 590px;
+}
+
+@media (max-width: 1600px) {
+    .main-page-introduction-pic1-l {
+        display: none;
+    }
+
+    .main-page-introduction-pic1-m {
+        display: block;
+    }
+
+    .main-page-block1-introduction {
+        justify-content: flex-start;
+    }
+
+    .main-page-introduction-title {
+        font-size: 58px;
+    }
+
+    .main-page-introduction-sub-title {
+        font-size: 22px;
+    }
+
+    .main-page-introduction-button {
+        font-size: 18px;
+    }
+
+    .main-page-introduction-pic2 {
+        max-width: 30%;
+        display: flex;
+    }
+
+    .main-page-introduction-pic2 img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .main-page-introduction-info {
+        padding: 0 10px;
+    }
+
+    .main-page-block1-bgc {
+        height: 675px;
+    }
+
+    .main-page-introduction-pic1 img {
+        max-height: 90%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .main-page-block4-about-us-photo {
+        max-width: 50%;
+    }
+
+    .main-page-block4-about-us-photo img {
+        object-fit: cover;
+        width: 100%;
+        min-height: 850px;
+    }
+
+    .main-page-block4-about-us-info {
+        margin-left: 50px;
+    }
+
+    .main-page-block4-about-us-info-title {
+        font-size: 34px;
+    }
+
+    .main-page-block4-about-us-info-paragraph {
+        font-size: 14px;
+    }
+
+    .main-page-block4-about-us-info-button {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+
+    .main-page-block5-popular-category-cards {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 40px;
+    }
+
+    .main-page-block5-popular-category-card:first-child {
+        margin-bottom: 20px;
+    }
+
+    .main-page-block5-popular-category-card-image img {
+        max-width: 100%;
+    }
+
+    .main-page-block5-popular-category-card-description {
+        white-space: normal;
+        margin-top: 10px;
+    }
+
+    .main-page-block5-popular-category-card-description span {
+        display: none;
+    }
+
+    .main-page-block5-popular-category-card-button {
+        max-width: 100%;
+    }
+
+    .main-page-block5-popular-category-title {
+        font-size: 34px;
+    }
+
+    .main-page-block5-popular-category {
+        margin-top: 80px;
+    }
+
+    .main-page-block5-popular-category-title {
+        text-align: right;
+    }
+
+    .main-page-block5-bgc {
+        height: 1400px;
+    }
+
+    .main-page-block6-newsletter-form-image {
+        display: none;
+    }
+
+    .main-page-block6-newsletter-title {
+        font-size: 32px;
+    }
+
+    .main-page-block6-newsletter-form-inputs {
+        padding: 30px;
+    }
+
+    .main-page-block6-newsletter-form {
+        margin-top: 30px;
+        justify-content: center;
+    }
+
+    .main-page-block6-newsletter-form-inputs {
+        max-width: 690px;
+        width: 100%;
+    }
+
+    .main-page-block7-bgc {
+        height: 240px;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-page-introduction-pic1-m {
+        display: none;
+    }
+
+    .main-page-introduction-pic1-s {
+        display: block;
+    }
+
+    .main-page-introduction-title {
+        font-size: 38px;
+    }
+
+    .main-page-introduction-sub-title {
+        font-size: 16px;
+    }
+
+    .main-page-introduction-button {
+        font-size: 12px;
+    }
+
+    .main-page-block2-title {
+        font-size: 24px;
+    }
+
+    .main-page-block2-description {
+        font-size: 14px;
+    }
+
+    .main-page-block3-current-promotion-content-title {
+        font-size: 20px;
+    }
+
+    .main-page-block3-current-promotion-content-button {
+        font-size: 14px;
+        padding: 15px 25px;
+        margin-top: 15px;
+    }
+
+    .main-page-block3-current-promotion {
+        margin-top: 45px;
+        height: 230px;
+    }
+
+    .main-page-block3-current-promotion-content {
+        height: auto;
+        padding: 10px;
+    }
+
+    .main-page-block3-current-promotion-content-additional-conditions {
+        bottom: -25px;
+        font-size: 10px;
+    }
+
+    .main-page-block4-about-us {
+        margin-top: 65px;
+        padding-right: 0;
+        flex-direction: row-reverse;
+    }
+
+    .main-page-block4-about-us-info {
+        margin-left: 0;
+        margin-right: 25px;
+    }
+
+    .main-page-block3-bgc {
+        height: 710px;
+    }
+
+    .main-page-block5-popular-category-title {
+        font-size: 36px;
+        line-height: 140%;
+    }
+
+    .main-page-block6-newsletter-title {
+        font-size: 26px;
+    }
+
+    .main-page-block6-newsletter-form-inputs-title {
+        font-size: 16px;
+    }
+
+    .main-page-block6-newsletter-form-inputs-content {
+        margin-top: 35px;
+    }
+}
+
+@media (max-width: 560px) {
+    .main-page-introduction-pic2 {
+        display: none;
+    }
+
+    .main-page-introduction-pic1 {
+        display: flex;
+        width: 35%;
+        overflow: hidden;
+        flex-grow: 2;
+    }
+
+    .main-page-introduction-pic1 img {
+        max-height: 100%;
+    }
+
+    .main-page-introduction-info {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    .main-page-introduction-title {
+        font-size: 32px;
+    }
+
+    .main-page-introduction-sub-title {
+        font-size: 14px;
+    }
+
+    .main-page-block2-title {
+        font-size: 20px;
+    }
+
+    .main-page-block2-promotions {
+        margin-top: 60px;
+    }
+
+    .main-page-block2-bgc {
+        height: 315px;
+    }
+
+    .main-page-block3-current-promotion-content-title {
+        font-size: 16px;
+        max-width: 80%;
+    }
+
+    .main-page-block4-about-us-info-title {
+        font-size: 30px;
+    }
+
+    .main-page-block4-about-us-info-button {
+        font-size: 14px;
+    }
+
+    .main-page-block5-bgc {
+        height: 1300px;
+    }
+
+    .main-page-block6-newsletter-title {
+        font-size: 22px;
+    }
+
+    .main-page-block6-newsletter-form-inputs-title {
+        font-size: 14px;
+    }
+
+    .main-page-block6-newsletter-form-inputs-btn {
+        font-size: 14px;
+        margin-top: 20px;
+        padding: 15px 25px;
+    }
+
+    .main-page-block6-newsletter-form-inputs-sub-title {
+        font-size: 12px;
+        margin-top: 40px;
+    }
+}
+
+@media (max-width: 340px) {
+    .main-page-block5-bgc {
+        height: 1100px;
+    }
+
+    .main-page-block6-newsletter-form-inputs-title span {
+        display: none;
+    }
+}

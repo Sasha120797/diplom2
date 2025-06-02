@@ -1,0 +1,221 @@
+.promotion-page-container {
+    padding-bottom: 120px;
+}
+
+.promotion-page-poster {
+    background-image: url("./images/132679.jpg");
+    height: 400px;
+    background-size: cover;
+    border-radius: 5px;
+}
+
+.promotion-page-title {
+    font-size: 36px;
+    font-family: "Cormorant", sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #212121;
+    margin-top: 110px;
+}
+
+.promotion-page-sub-title {
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    color: #212121;
+    max-width: 770px;
+    line-height: 150%;
+    margin-top: 30px;
+}
+
+.promotion-page-big-promotion {
+    margin-top: 90px;
+}
+
+.promotion-page-big-promotion-img img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.promotion-page-big-promotion-title {
+    max-width: 500px;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 150%;
+    font-family: "Montserrat", sans-serif;
+    color: #212121;
+    margin-top: 30px;
+}
+
+.promotion-page-big-promotion-info {
+    margin-top: 25px;
+    font-family: "Montserrat", sans-serif;
+    color: #212121;
+}
+
+.promotion-page-big-promotion-button {
+    padding: 20px 10px;
+    max-width: 285px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.promotion-page-small-promotion-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px;
+}
+
+.promotion-page-small-promotion-img {
+    max-width: 550px;
+    max-height: 550px;
+}
+
+.promotion-page-small-promotion-img img {
+    width: 100%;
+}
+
+.promotion-page-small-promotion-title {
+    margin-top: 30px;
+    font-size: 24px;
+    color: #212121;
+    font-weight: 500;
+    line-height: 150%;
+    font-family: "Montserrat", sans-serif;
+    max-width: 450px;
+    white-space: pre-line;
+}
+
+.promotion-page-small-promotion-button {
+    padding: 15px;
+    max-width: 260px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+@media (max-width: 1200px) {
+    .promotion-page-small-promotion-img {
+        width: 400px;
+        height: 400px;
+    }
+
+    .promotion-page-small-promotion-container {
+        justify-content: space-around;
+    }
+
+    .promotion-page-poster {
+        height: 200px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .promotion-page-title {
+        margin-top: 55px;
+        font-size: 28px;
+    }
+
+    .promotion-page-sub-title {
+        font-size: 16px;
+        width: 100%;
+        max-width: none;
+        margin-top: 20px;
+    }
+
+    .promotion-page-big-promotion {
+        margin-top: 40px;
+    }
+
+    .promotion-page-big-promotion-title {
+        font-size: 20px;
+        margin-top: 20px;
+    }
+
+    .promotion-page-small-promotion-title {
+        font-size: 16px;
+        margin-top: 20px;
+    }
+
+    .promotion-page-small-promotion-button {
+        margin-top: 15px;
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .promotion-page-small-promotion-img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .promotion-page-poster {
+        height: 170px;
+    }
+}
+
+@media (max-width: 768px) {
+    .promotion-page-big-promotion-title {
+        font-size: 16px;
+        max-width: none;
+        margin-top: 10px;
+    }
+
+    .promotion-page-big-promotion-info {
+        font-size: 14px;
+        margin-top: 10px;
+    }
+
+    .promotion-page-big-promotion-button {
+        margin: 15px auto 0;
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .promotion-page-small-promotion-container {
+        margin-top: 30px;
+        flex-direction: column;
+    }
+
+    .promotion-page-small-promotion {
+        margin-bottom: 25px;
+    }
+
+    .promotion-page-small-promotion-title {
+        font-size: 14px;
+        max-width: none;
+        white-space: normal;
+        text-align: center;
+    }
+
+    .promotion-page-small-promotion-img {
+        width: 200px;
+        height: 200px;
+        margin: 0 auto;
+    }
+
+    .promotion-page-small-promotion-button {
+        max-width: none;
+    }
+
+    .promotion-page-container {
+        padding-bottom: 50px;
+    }
+}
+
+@media (max-width: 560px) {
+    .promotion-page-sub-title {
+        font-size: 14px;
+    }
+
+    .promotion-page-big-promotion-button {
+        max-width: none;
+    }
+
+    .promotion-page-poster {
+        height: 150px;
+        background-position: center center;
+    }
+}
+
+@media (max-width: 440px) {}

@@ -1,0 +1,127 @@
+.give-a-hint-container {
+    padding: 0 35px;
+}
+
+.give-a-hint-message {
+    display: flex;
+}
+
+.give-a-hint-message-img img {
+    height: 160px;
+    width: 160px;
+}
+
+.give-a-hint-message-img {
+    border: 1px solid #212121;
+    margin-right: 40px;
+    height: 162px;
+    width: 162px;
+}
+
+.give-a-hint-message-title {
+    white-space: pre-line;
+    line-height: 150%;
+    max-width: 325px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #484848;
+}
+
+.give-a-hint-form {
+    margin-top: 35px;
+    display: flex;
+}
+
+.give-a-hint-form>div {
+    width: 50%;
+    padding: 0 45px 0 0;
+}
+
+.give-a-hint-form-title {
+    line-height: 150%;
+    font-family: "Montserrat", sans-serif;
+    color: #212121;
+    margin-bottom: 15px;
+}
+
+.give-a-hint-form-field {
+    margin-bottom: 45px;
+}
+
+.give-a-hint-form-field:first-child {
+    margin-top: 10px;
+}
+
+.give-a-hint-accept {
+    font-size: 14px;
+    color: #212121;
+    line-height: 150%;
+    max-width: 45%;
+    padding-left: 5px;
+}
+
+.give-a-hint-accept > p{
+    display: inline-block;
+    color: #1565c0;
+}
+
+.give-a-hint-btn {
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+@media (max-width: 768px) {
+    .give-a-hint-container {
+        padding: 0;
+    }
+
+    .give-a-hint-message-title {
+        font-size: 14px;
+    }
+
+    .give-a-hint-message-img img {
+        height: 98px;
+        width: 98px;
+        border: 1px solid black;
+    }
+
+    .give-a-hint-message-img {
+        margin-right: 15px;
+        height: 99px;
+        width: 99px;
+    }
+
+    .give-a-hint-form {
+        flex-wrap: wrap;
+    }
+
+    .give-a-hint-form>div {
+        width: 100%;
+        padding: 0;
+    }
+
+    .give-a-hint-accept {
+        width: 100%;
+        max-width: none;
+    }
+
+    .give-a-hint-btn {
+        margin-top: 25px;
+    }
+}
+
+@media (max-width: 560px) {
+    .give-a-hint-message {
+        flex-direction: column;
+    }
+
+    .give-a-hint-message-title {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 440px) {}

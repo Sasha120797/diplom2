@@ -1,0 +1,280 @@
+.payment-order-page-container {
+    padding-bottom: 125px;
+}
+
+.payment-order-page-total-amount {
+    min-height: 380px;
+    background-color: #F2F0EE;
+}
+
+.payment-order-page-total-amount {
+    min-height: 360px;
+}
+
+.payment-order-page-total-amount-navigation {
+    padding-top: 10px;
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    color: #939393;
+    line-height: 150%;
+}
+
+.payment-order-page-total-amount-navigation span {
+    color: #212121;
+}
+
+.payment-order-page-total-amount-title {
+    margin-top: 40px;
+    font-family: "Cormorant", sans-serif;
+    font-size: 36px;
+    color: #212121;
+    font-weight: bold;
+}
+
+.payment-order-page-total-amount-price {
+    display: flex;
+    margin-top: 30px;
+    font-size: 22px;
+    color: #212121;
+    font-family: "Montserrat", sans-serif;
+    align-items: center;
+    max-width: 550px;
+    justify-content: space-between;
+}
+
+.payment-order-page-total-amount-price-number {
+    font-weight: bold;
+}
+
+.payment-order-page-total-amount-promocode-title {
+    margin-top: 30px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: #212121;
+}
+
+.payment-order-page-total-amount-promocode-input {
+    margin-top: 25px;
+    max-width: 550px;
+}
+
+.payment-order-page-total-amount-price-discount {
+    margin-top: 45px;
+}
+
+.payment-order-page-total-payment-type {
+    margin-top: 25px;
+}
+
+.payment-order-page-total-payment-type-title {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 150%;
+    font-family: "Montserrat", sans-serif;
+}
+
+.payment-order-page-total-payment-type-sub-title {
+    margin-top: 30px;
+    max-width: 860px;
+    font-size: 18px;
+    line-height: 150%;
+    font-family: "Montserrat", sans-serif;
+}
+
+.payment-order-page-paymanet-type-form {
+    margin-top: 50px;
+}
+
+.payment-order-page-payment-form-input {
+    display: flex;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.payment-order-page-payment-form-input:first-child {
+    margin-top: 35px;
+}
+
+.payment-order-page-payment-form-input {
+    margin-bottom: 25px;
+}
+
+.payment-order-page-payment-form-input input {
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+    display: none;
+}
+
+.payment-order-page-payment-form-input label {
+    display: flex;
+    align-items: center;
+}
+
+.payment-order-page-payment-form-input label:before {
+    width: 26px;
+    height: 26px;
+    margin-right: 20px;
+    content: "";
+    border: 1px solid black;
+    display: inline-flex;
+    cursor: pointer;
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding-top: 7px;
+}
+
+.payment-order-page-payment-form-input input:checked+label:before {
+    content: url("../catalog/images/square.svg");
+}
+
+.payment-order-page-payment-form-card-container {
+    width: 100%;
+}
+
+.payment-order-page-payment-form-card {
+    max-width: 600px;
+}
+
+.payment-order-page-payment-form-card-str {
+    display: flex;
+}
+
+.payment-order-page-payment-form-card-input-number,
+.payment-order-page-payment-form-card-input-user {
+    max-width: 300px;
+    margin-right: 55px;
+    width: 100%;
+}
+
+.payment-order-page-payment-form-card-str {
+    margin-top: 35px;
+}
+
+.payment-order-page-payment-button {
+    max-width: 300px;
+    padding: 20px;
+    margin-top: 45px;
+    display: flex;
+    justify-content: center;
+    line-height: 150%;
+    font-weight: 500;
+    justify-content: center;
+}
+
+
+@media (max-width: 1000px) {
+    .payment-order-page-total-amount-inner {
+        max-width: 550px;
+    }
+
+    .payment-order-page-total-amount-navigation {
+        font-size: 14px;
+    }
+
+    .payment-order-page-total-amount-title {
+        font-size: 28px;
+    }
+
+    .payment-order-page-total-amount-price {
+        font-size: 18px;
+    }
+
+    .payment-order-page-total-amount-promocode-title {
+        font-size: 16px;
+    }
+
+    .payment-order-page-total-amount-promocode-input {
+        max-width: none;
+    }
+
+    .payment-order-page-total-payment-type {
+        max-width: 550px;
+    }
+
+    .payment-order-page-payment-form-input {
+        font-size: 16px;
+    }
+
+    .payment-order-page-total-payment-type-sub-title {
+        font-size: 14px;
+    }
+
+    .payment-order-page-total-payment-type-sub-title {
+        margin-top: 30px;
+    }
+
+    .payment-order-page-paymanet-type-form {
+        margin-top: 30px;
+    }
+
+    .payment-order-page-payment-form-card-str {
+        flex-direction: column;
+        margin-top: 0;
+    }
+
+    .payment-order-page-payment-form-card-str>.field {
+        max-width: none;
+        margin-top: 25px;
+    }
+
+    .payment-order-page-payment-form-card>.payment-order-page-payment-form-card-str:first-child>.field:first-child {
+        margin-top: 0;
+    }
+
+    .payment-order-page-payment-button {
+        max-width: none;
+        padding: 15px;
+    }
+
+    .payment-order-page-container {
+        padding-bottom: 55px;
+    }
+}
+
+@media (max-width: 560px) {
+    .payment-order-page-total-amount-navigation {
+        font-size: 12px;
+    }
+
+    .payment-order-page-total-amount-price {
+        flex-direction: column;
+        align-items: flex-start;
+        line-height: 150%;
+    }
+
+    .payment-order-page-total-amount-price-number {
+        align-self: flex-end;
+    }
+
+    .payment-order-page-total-amount-title {
+        margin-top: 30px;
+    }
+
+    .payment-order-page-total-amount-price {
+        margin-top: 15px;
+    }
+
+    .payment-order-page-total-amount-promocode-title {
+        margin-top: 15px;
+    }
+
+    .payment-order-page-total-amount-promocode-input {
+        margin-top: 18px;
+    }
+
+    .payment-order-page-total-amount-price-discount {
+        margin-top: 35px;
+    }
+
+    .payment-order-page-total-amount {
+        min-height: 340px;
+    }
+}
+
+@media (max-width: 340px) {}

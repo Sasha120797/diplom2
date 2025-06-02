@@ -1,0 +1,78 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model ErrorLog {
+  id        String   @id @default(uuid())
+  path      String // Путь, на котором произошла ошибка
+  timestamp DateTime @default(now()) // Время возникновения ошибки
+  exception String // Сообщение об ошибке
+}
+
+model Product {
+  id          String   @id @default(uuid()) // UUID, обязательное поле, автоматически устанавливается
+  name        String // Название, обязательное поле
+  sku         String // Артикул, обязательное поле
+  basePrice   Int // Базовая цена, обязательное поле
+  category    String // Категория товара, обязательное поле
+  description String // Описание, обязательное поле
+  onSale      Boolean  @default(false) // Товар на скидке, обязательное поле, по умолчанию false
+  isFeatured  Boolean  @default(false) // Товар хит, обязательное поле, по умолчанию false
+  color       String // Цвет товара, обязательное поле
+  salePrice   Int? // Цена по скидке, не обязательное поле
+  images      String[] // Фото товара, обязательное поле (массив строк)
+  views       Int      @default(0) // Кол-во просмотров товара
+
+  // Обратные связи для корзины и вишлиста
+  usersCart     User[]  @relation("UserCart") // Пользователи, у которых товар в корзине
+  usersWishlist User[]  @relation("UserWishlist") // Пользователи, у которых товар в вишлисте
+  orders        Order[] @relation("OrderProducts")
+
+  @@map("products") // Опционально: задаем имя таблицы в БД
+}
+
+model User {
+  id              String    @id @default(uuid()) // Уникальный идентификатор (UUID)
+  fullname        String
+  email           String    @unique // Электронная почта (уникальное поле)
+  phone           String // Мобильный телефон
+  cart            Product[] @relation("UserCart") // Корзина (массив продуктов)
+  wishlist        Product[] @relation("UserWishlist") // Вишлист (массив продуктов)
+  orders          Order[] // Заказы (массив заказов)
+  password        String // Пароль
+  resetedPassword Boolean   @default(false) // Сброшен ли пароль (по умолчанию false)
+  register_date   DateTime  @default(now()) // Дата регистрации (автоматически добавляется)
+
+  @@map("users") // Опционально: задаем имя таблицы в БД
+}
+
+model Order {
+  id        String   @id @default(uuid()) // Уникальный идентификатор
+  createdAt DateTime @default(now()) // Дата создания заказа (автоматически)
+  updatedAt DateTime @updatedAt // Дата последнего обновления (автоматически)
+
+  // Связь с пользователем (покупателем)
+  userId String // ID пользователя (внешний ключ)
+  user   User   @relation(fields: [userId], references: [id]) // Связь 1-ко-многим
+
+  status  String  @default("created") // Статус заказа
+  address String // Адрес доставки
+  comment String? // Комментарий (необязательный)пол7ый
+  review  String? // Отзыв (необязательный)
+
+  // Связь с продуктами (многие-ко-многим через промежуточную таблицу)
+  products Product[] @relation("OrderProducts") // Продукты в заказе
+
+  @@map("orders") // Название таблицы в БД
+}

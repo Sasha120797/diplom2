@@ -1,0 +1,75 @@
+.register-page-container {
+    padding-bottom: 150px;
+}
+
+.search-page-header {
+    background-color: #F2F0EE;
+    min-height: 210px;
+}
+
+.search-page-header-inner {
+    min-height: 210px;
+}
+
+.search-page-header-navigation {
+    color: #939393;
+    font-family: "Montserrat", sans-serif;
+    line-height: 150%;
+    padding-top: 10px;
+}
+
+.search-page-header-navigation span {
+    color: #212121;
+}
+
+.search-page-header-title {
+    text-transform: uppercase;
+    font-size: 36px;
+    font-family: "Cormorant", sans-serif;
+    font-weight: bold;
+    margin-top: 45px;
+    color: #212121;
+}
+
+.search-page-header-input {
+    margin-bottom: 35px;
+    margin-top: 30px;
+    max-width: 550px;
+}
+
+.search-page-result-title {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 150%;
+    color: #212121;
+    font-family: "Montserrat", sans-serif;
+}
+
+.search-page-result-products {
+    margin-top: 25px;
+    /* display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 67px; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit,
+            minmax(225px, 1fr));
+    /* Автоматическое создание колонок */
+    gap: 20px;
+    /* Отступы между карточками по горизонтали и вертикали */
+}
+
+.search-page-result {
+    padding-bottom: 75px;
+}
+
+@media (max-width: 768px) {
+
+    .search-page-result-products {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
