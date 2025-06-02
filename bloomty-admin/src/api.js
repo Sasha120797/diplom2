@@ -1,16 +1,15 @@
 // api.js
 
 import axios from 'axios';
-
-const API_URL = 'http://localhost:3000/product';
+import { PRODUCTS_URL } from './config/urls';
 
 export const getProducts = async () => {
-  const res = await axios.get(API_URL);
+  const res = await axios.get(PRODUCTS_URL);
   return res.data;
 };
 
 export const createProduct = async (formData) => {
-  const res = await axios.post(`${API_URL}/create`, formData, {
+  const res = await axios.post(`${PRODUCTS_URL}/create`, formData, {
     headers: {
       'Content-Type': 'multipart/form-data',
     },
@@ -23,7 +22,7 @@ export const updateProduct = async (id, data) => {
   const isFormData = data instanceof FormData;
 
   const res = await axios.post(
-    `${API_URL}/update`,
+    `${PRODUCTS_URL}/update`,
     isFormData ? data : { id, ...data },
     isFormData
       ? {
@@ -38,6 +37,6 @@ export const updateProduct = async (id, data) => {
 };
 
 export const deleteProduct = async (id) => {
-  const res = await axios.get(`${API_URL}/delete/${id}`);
+  const res = await axios.get(`${PRODUCTS_URL}/delete/${id}`);
   return res.data;
 };

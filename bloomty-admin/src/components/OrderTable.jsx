@@ -10,6 +10,7 @@ import {
     message
 } from 'antd';
 import axios from 'axios';
+import { ORDERS_URL } from '../config/urls';
 
 const { Option } = Select;
 const { TextArea } = Input;
@@ -32,7 +33,7 @@ const OrderTable = () => {
     useEffect(() => {
         const fetchOrders = async () => {
             try {
-                const res = await axios.get('http://localhost:3000/order/getadmin');
+                const res = await axios.get(`${ORDERS_URL}/getadmin`);
                 setOrders(res.data);
                 setLoading(false);
             } catch (error) {
@@ -58,87 +59,54 @@ const OrderTable = () => {
     // Сохранение изменений
     const handleSave = async (values) => {
         try {
-            await axios.post('http://localhost:3000/order/updateadmin', values);
+            await axios.post(`${ORDERS_URL}/updateadmin`, values);
             message.success('Заказ успешно обновлён');
-
-            // Обновляем список
-            const updatedOrders = orders.map((order) =>
-                order.id === values.id ? { ...order, ...values } : order
-            );
-            setOrders(updatedOrders);
-
             setIsModalOpen(false);
+            // Обновляем список заказов
+            const res = await axios.get(`${ORDERS_URL}/getadmin`);
+            setOrders(res.data);
         } catch (error) {
-            message.error('Не удалось сохранить изменения');
+            message.error('Ошибка при обновлении заказа');
         }
     };
 
-    // Колонки таблицы
     const columns = [
         {
-            title: 'ID заказа',
+            title: 'ID',
             dataIndex: 'id',
             key: 'id',
-            ellipsis: true,
-        },
-        {
-            title: 'Дата создания',
-            dataIndex: 'createdAt',
-            key: 'createdAt',
-            render: (text) => new Date(text).toLocaleString(),
-        },
-        {
-            title: 'Пользователь',
-            dataIndex: ['user', 'fullname'],
-            key: 'user',
-            render: (_, record) => (
-                <div>
-                    <strong>{record.user.fullname}</strong>
-                    <br />
-                    <small>{record.user.email}</small>
-                </div>
-            ),
-        },
-        {
-            title: 'Адрес доставки',
-            dataIndex: 'address',
-            key: 'address',
-            ellipsis: true,
         },
         {
             title: 'Статус',
             dataIndex: 'status',
             key: 'status',
             render: (status) => {
-                return {
-                    created: 'Создан',
-                    shipped: 'Отправлен',
-                    delivered: 'Доставлен',
-                }[status];
-            },
+                const option = statusOptions.find(opt => opt.value === status);
+                return option ? option.label : status;
+            }
+        },
+        {
+            title: 'Адрес',
+            dataIndex: 'address',
+            key: 'address',
         },
         {
             title: 'Комментарий',
             dataIndex: 'comment',
             key: 'comment',
-            ellipsis: true,
+            render: (text) => text || '-'
         },
         {
-            title: 'Товары',
-            dataIndex: 'products',
-            key: 'products',
-            render: (products) =>
-                products.map((prod) => (
-                    <div key={prod.id}>
-                        <strong>{prod.name}</strong> ({prod.sku})
-                    </div>
-                )),
+            title: 'Отзыв',
+            dataIndex: 'review',
+            key: 'review',
+            render: (text) => text || '-'
         },
         {
             title: 'Действия',
-            dataIndex: 'actions',
+            key: 'actions',
             render: (_, record) => (
-                <Button type="link" onClick={() => showModal(record)}>
+                <Button type="primary" onClick={() => showModal(record)}>
                     Редактировать
                 </Button>
             ),
@@ -148,34 +116,23 @@ const OrderTable = () => {
     return (
         <>
             <Table
-                dataSource={orders}
                 columns={columns}
-                loading={loading}
+                dataSource={orders}
                 rowKey="id"
+                loading={loading}
             />
 
-            {/* Модалка редактирования */}
             <Modal
                 title="Редактировать заказ"
-                visible={isModalOpen}
+                open={isModalOpen}
                 onCancel={handleCancel}
-                onOk={() => form.submit()}
-                okText="Сохранить"
-                cancelText="Отмена"
+                footer={null}
             >
-                <Form form={form} layout="vertical" onFinish={handleSave}>
-                    <Form.Item name="id" hidden>
-                        <Input />
-                    </Form.Item>
-
-                    <Form.Item label="Адрес доставки" name="address" rules={[{ required: true }]}>
-                        <Input />
-                    </Form.Item>
-
-                    <Form.Item label="Комментарий" name="comment">
-                        <TextArea rows={3} />
-                    </Form.Item>
-
+                <Form
+                    form={form}
+                    onFinish={handleSave}
+                    layout="vertical"
+                >
                     <Form.Item label="Статус" name="status" rules={[{ required: false }]}>
                         <Select defaultValue="created">
                             {statusOptions.map((opt) => (
@@ -188,6 +145,12 @@ const OrderTable = () => {
 
                     <Form.Item label="Отзыв" name="review">
                         <TextArea rows={3} />
+                    </Form.Item>
+
+                    <Form.Item>
+                        <Button type="primary" htmlType="submit">
+                            Сохранить
+                        </Button>
                     </Form.Item>
                 </Form>
             </Modal>

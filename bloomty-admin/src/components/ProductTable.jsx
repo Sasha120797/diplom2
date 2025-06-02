@@ -4,6 +4,7 @@ import { DeleteOutlined, EditOutlined, PlusCircleOutlined } from '@ant-design/ic
 import AddProductModal from './AddProductModal';
 import EditProductModal from './EditProductModal';
 import { getProducts, deleteProduct } from '../api';
+import { STATIC_URL } from '../config/urls';
 
 const ProductTable = () => {
     const [products, setProducts] = useState([]);
@@ -101,7 +102,7 @@ const ProductTable = () => {
                             display: 'flex', gap: 4,
                         }}>
                             {images.slice(0, 3).map((img, i) => (
-                                <img key={i} src={`http://localhost:3000/static/${img}`} alt="product" style={{ width: 40, height: 40, objectFit: 'cover' }} />
+                                <img key={i} src={`${STATIC_URL}/${img}`} alt="product" style={{ width: 40, height: 40, objectFit: 'cover' }} />
                             ))}
                         </div>
                         {images.length > 3 && <span>+{images.length - 3}</span>}
