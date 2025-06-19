@@ -1,5 +1,0 @@
-backend  npm run start:prod.
-loomty-frontend npm start. 
- bloomty-admin npm start. 
-
-
